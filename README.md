@@ -2,23 +2,23 @@
 
 
     nano /etc/network/interfaces{
-auto ens33
-iface ens33 inet manual
-up ip link set dev $IFACE up
-down ip link set dev $IFACE down
-}
-nano /etc/hosts{
-# controller
-10.0.0.18 controller
-# compute1
-10.0.0.23 compute1
-# block1
-10.0.0.41 block1
-# object1
-10.0.0.51 object1
-# object2
-10.0.0.52 object2
-}
+        auto ens33
+        iface ens33 inet manual
+        up ip link set dev $IFACE up
+        down ip link set dev $IFACE down
+    }
+    nano /etc/hosts{
+        # controller
+        10.0.0.18 controller
+        # compute1
+        10.0.0.23 compute1
+        # block1
+        10.0.0.41 block1
+        # object1
+        10.0.0.51 object1
+        # object2
+        10.0.0.52 object2
+    }
 
 Network Time Protocol (NTP)
 apt -y install chrony
