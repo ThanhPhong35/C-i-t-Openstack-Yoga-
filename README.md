@@ -1,7 +1,7 @@
 # Cấu hình card mạng
-![image](https://github.com/user-attachments/assets/af58909e-becf-42a6-87f8-545a760d8e1c)
+![Screenshot 2024-07-30 095855](https://github.com/user-attachments/assets/b4b5f7c6-a721-40a1-b197-49c5acd9bf64)
 # Cấu hình máy 
-![image](https://github.com/user-attachments/assets/477bdf2f-e55e-4337-aa0f-176b5d8cb18d)
+![Screenshot 2024-07-30 100029](https://github.com/user-attachments/assets/19e714f0-3e42-486d-b974-d13d9a222872)
 # Sửa file /etc/hosts
     nano /etc/hosts{
         # controller
