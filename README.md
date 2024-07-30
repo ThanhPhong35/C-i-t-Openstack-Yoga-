@@ -1,4 +1,8 @@
 # Cấu hình card mạng
+![image](https://github.com/user-attachments/assets/af58909e-becf-42a6-87f8-545a760d8e1c)
+# Cấu hình máy 
+![image](https://github.com/user-attachments/assets/477bdf2f-e55e-4337-aa0f-176b5d8cb18d)
+# Sửa file /etc/hosts
     nano /etc/hosts{
         # controller
         10.0.0.18 controller
@@ -11,7 +15,6 @@
         # object2
         10.0.0.52 object2
     }
-
 # Cài đặt Network Time Protocol (NTP)
     apt -y install chrony
     nano /etc/chrony/chrony.conf{
@@ -38,20 +41,17 @@
     }
     service mysql restart
     mysql_secure_installation
-
 # Cài đặt Openstack Repository (Yoga)
     apt -y install software-properties-common
     add-apt-repository cloud-archive:yoga
     apt update
     apt -y upgrade
-
 # Cài RabbitMQ
     apt install rabbitmq-server
     systemctl enable rabbitmq-server.service 
     systemctl start rabbitmq-server.service
     rabbitmqctl add_user openstack password
     rabbitmqctl set_permissions openstack ".*" ".*" ".*"
-
 # Cài đặt Memcached
     apt install memcached
     nano /etc/memcached.conf{
