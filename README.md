@@ -23,6 +23,7 @@
         # object2
         10.0.0.52 object2
     }
+    reboot
 # Cài đặt Network Time Protocol (NTP)
     apt -y install chrony
     nano /etc/chrony/chrony.conf{
