@@ -2,6 +2,14 @@
 ![image](https://github.com/user-attachments/assets/743ac3a0-377b-4210-b59f-9e152a637eac)
 # Cấu hình máy 
 ![image](https://github.com/user-attachments/assets/284054f0-8230-4b2c-8e17-f305d9b7cac5)
+# Sửa file /etc/network/interfaces
+    nano /etc/network/interfaces{
+        auto ens33
+        iface ens33 inet manual
+        up ip link set dev $IFACE up
+        down ip link set dev $IFACE down
+    }
+
 # Sửa file /etc/hosts
     nano /etc/hosts{
         # controller
